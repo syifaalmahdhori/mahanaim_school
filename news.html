@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mahanaim School</title>
+  <link rel="icon" href="images/logo.jpg" type="image/png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Load Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Birthstone&family=Great+Vibes&family=Instrument+Serif:ital@0;1&family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Load Bootstrap first -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <!-- Your custom CSS (always after Bootstrap) -->
+  <link href="style_mahanaimschool.css" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- HEADER SECTION -->
+ <header>
+  <!-- Logo Sekolah -->
+  <img src="images/logo.png" alt="School Logo" class="logo">
+  
+  <!-- Header Biru dengan Judul dan Motto -->
+  <div class="top-header">
+    <h1>MAHANAIM SCHOOL</h1>
+    <p>
+      "Everyone is precious" is our school's motto, we believe that every child is both precious and unique in their own way.
+    </p>
+  </div>
+</header>
+
+<!-- Navigasi Utama -->
+<nav>
+  <ul class="navi">
+    <li><a href="index.html" title="Home">Home</a></li>
+    <li><a href="academic.html" title="Academic">Academic</a></li>
+    <li><a href="news.html" title="News" class="active-bg">News</a></li>
+    <li><a href="contact.html" title="Contact">Contact</a></li>
+    <li><a href="registration.html" title="Registration" class="registration-btn">Registration</a></li>
+    
+    <!-- Menu Bahasa -->
+    <li class="language-menu">
+      <a href="#" title="EN">
+        <img src="images/EN.jpg.avif" alt="English Flag" class="flag-icon">
+        EN <span class="down-arrow">&#9662;</span>
+      </a>
+    </li>
+  </ul>
+    <!-- Burger Icon -->
+<div class="burger" onclick="toggleMenu()">
+  <img src="images/menu.png" alt="Menu" />
+</div>
+
+<!-- Dropdown Menu -->
+<ul class="dropdown-menu" id="dropdownMenu">
+  <li><a href="index.html" title="Home">Home</a></li>
+  <li><a href="academic.html" title="Academic">Academic</a></li>
+  <li><a href="news.html" title="News" >News</a></li>
+  <li><a href="contact.html" title="Contact">Contact</a></li>
+  <li><a href="registration.html" title="Registration" class="registration-btn">Registration</a></li>
+  <li class="language-menu">
+    <a href="#" title="EN">
+      <img src="images/EN.jpg.avif" alt="English Flag" class="flag-icon" />
+      EN <span class="down-arrow">&#9662;</span>
+    </a>
+  </li>
+</ul>
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById('dropdownMenu');
+    if (menu.style.display === 'flex') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'flex';
+    }
+  }
+</script>
+</nav>
+
+  <section id="news" class="news-section">
+  <div class="container">
+    <h2 class="news-title">NEWS</h2>
+    <p class="news-subtitle">Recent news updates from across Mahanaim School</p>
+
+    <hr>
+
+    <div class="news-item">
+      <div class="news-text">
+        <p class="news-date">16 March 2025</p>
+        <h3 class="news-headline">Mid-Year Break Schedule for 2025</h3>
+        <p class="news-description">The administration releases official dates for the upcoming school break, giving students and families time to plan ahead.</p>
+      </div>
+      <div class="news-image">
+        <img src="images/sma1.jpg" alt="News Image 1">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="news-item">
+      <div class="news-text">
+        <p class="news-date">1 March 2025</p>
+        <h3 class="news-headline">Students Gear Up for Semester Break Activities</h3>
+        <p class="news-description">From camps to creative workshops, students prepare to make the most of their time off this semester.</p>
+      </div>
+      <div class="news-image">
+        <img src="images/news-2.jpeg" alt="News Image 2">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="news-item">
+      <div class="news-text">
+        <p class="news-date">27 February 2025</p>
+        <h3 class="news-headline">Mahanaim High School Achieves Trophy Awards</h3>
+        <p class="news-description">Mahanaim High School has consistently demonstrated excellence by winning numerous trophy awards in academics, sports, and the arts.</p>
+      </div>
+      <div class="news-image">
+        <img src="images/news-3.jpg" alt="News Image 2">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="news-item">
+      <div class="news-text">
+        <p class="news-date">11 February 2025</p>
+        <h3 class="news-headline">Gold in English Speech Contest!</h3>
+        <p class="news-description">Stephanie R. (Grade 11) won 1st place in the National English Speech Competition. Her inspiring speech on youth leadership earned top marks from the judges. Well done, Stephanie!</p>
+      </div>
+      <div class="news-image">
+        <img src="images/news-4.webp" alt="News Image 2">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="news-item">
+      <div class="news-text">
+        <p class="news-date">2 February 2025</p>
+        <h3 class="news-headline">Bible Camp Inspires Students Across All Grades</h3>
+        <p class="news-description">Last weekend, Mahanaim held its annual Bible Camp, filled with worship sessions, outdoor activities, and group devotions. Students returned spiritually refreshed and more connected to one another.
+</p>
+      </div>
+      <div class="news-image">
+        <img src="images/news-5.jpeg" alt="News Image 2">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="news-item">
+      <div class="news-text">
+        <p class="news-date">30 January 2025</p>
+        <h3 class="news-headline">Science Fair Innovation Award</h3>
+        <p class="news-description">Our Grade 5 team secured 3rd place at the National Science Fair with their creative “eco water filter” project. A fantastic blend of innovation and teamwork!</p>
+      </div>
+      <div class="news-image">
+        <img src="images/news-6.jpg" alt="News Image 2">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="news-item">
+      <div class="news-text">
+        <p class="news-date">3 January 2025</p>
+        <h3 class="news-headline">Green Day : Studdents Join Eco-Clean-Up Movement</h3>
+        <p class="news-description">In a special environmental campaign, students helped clean school surroundings and planted trees around campus. The event aimed to build eco-awareness and a love for nature.</p>
+      </div>
+      <div class="news-image">
+        <img src="images/news-7.jpg" alt="News Image 2">
+      </div>
+    </div>
+
+        <hr>
+
+    <div class="news-item">
+      <div class="news-text">
+        <p class="news-date">24 December 2024</p>
+        <h3 class="news-headline">Math Olympiad Success!</h3>
+        <p class="news-description">Congratulations to Arvin L. (Grade 8) for winning 2nd place in the National Math Olympiad. His sharp logic and calm under pressure made us proud!</p>
+      </div>
+      <div class="news-image" id="news-image-last">
+        <img src="images/news-8.jpeg" alt="News Image 2">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="enroll-banner">
+  <div class="enroll-text">Ready to take the next step in your education?</div>
+  <a href="registration.html" class="enroll-btn">ENROLL NOW</a>
+</section>
+<section class="footer-section-wrapper">
+  <footer class="school-footer">
+    <div class="footer-top">
+      <div class="footer-info">
+        <!-- Address -->
+        <div class="footer-section">
+          <img src="images/location.svg" alt="Address Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">ADDRESS</h3>
+            <p class="footer-text">
+              Jl. Bambu Kuning Selatan RT 004 / RW 003<br>
+              Kelurahan Sepanjang Jaya, Kecamatan<br>
+              Rawalumbu, Bekasi
+            </p>
+          </div>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-section">
+          <img src="images/clock.svg" alt="Clock Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">OPENING HOURS</h3>
+            <p class="footer-text">Monday - Friday: 07:00 - 15:00 WIB</p>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="footer-section">
+          <img src="images/contact.svg" alt="Contact Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">CONTACT DETAILS</h3>
+            <p class="footer-text">
+              officialmahanaim.school@gmail.com<br>
+              +62 8243 3111
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="School Logo">
+      </div>
+    </div>
+  </footer>
+</section>
+
+<!-- Footer Wrapper -->
+<div class="footer-bg">
+  <div class="footer-bottom">
+    <p>© 2025 Mahanaim School. All Rights Reserved.</p>
+    <div class="social-icons">
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
+
+</body>
+</html>

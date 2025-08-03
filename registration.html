@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mahanaim School</title>
+  <link rel="icon" href="images/logo.jpg" type="image/png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Load Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Birthstone&family=Great+Vibes&family=Instrument+Serif:ital@0;1&family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Load Bootstrap first -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <!-- Your custom CSS (always after Bootstrap) -->
+  <link href="style_mahanaimschool.css" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- HEADER SECTION -->
+ <header>
+  <!-- Logo Sekolah -->
+  <img src="images/logo.png" alt="School Logo" class="logo">
+  
+  <!-- Header Biru dengan Judul dan Motto -->
+  <div class="top-header">
+    <h1>MAHANAIM SCHOOL</h1>
+    <p>
+      "Everyone is precious" is our school's motto, we believe that every child is both precious and unique in their own way.
+    </p>
+  </div>
+</header>
+
+<!-- Navigasi Utama -->
+<nav>
+  <ul class="navi">
+    <li><a href="index.html" title="Home">Home</a></li>
+    <li><a href="academic.html" title="Academic">Academic</a></li>
+    <li><a href="news.html" title="News">News</a></li>
+    <li><a href="contact.html" title="Contact">Contact</a></li>
+    <li><a href="registration.html" title="Registration" class="registration-btn active">Registration</a></li>
+    <!-- Menu Bahasa -->
+    <li class="language-menu">
+      <a href="#" title="EN">
+        <img src="images/EN.jpg.avif" alt="English Flag" class="flag-icon">
+        EN <span class="down-arrow">&#9662;</span>
+      </a>
+    </li>
+  </ul>
+    <!-- Burger Icon -->
+<div class="burger" onclick="toggleMenu()">
+  <img src="images/menu.png" alt="Menu" />
+</div>
+
+<!-- Dropdown Menu -->
+<ul class="dropdown-menu" id="dropdownMenu">
+  <li><a href="index.html" title="Home">Home</a></li>
+  <li><a href="academic.html" title="Academic">Academic</a></li>
+  <li><a href="news.html" title="News">News</a></li>
+  <li><a href="contact.html" title="Contact">Contact</a></li>
+  <li><a href="registration.html" title="Registration" class="registration-btn">Registration</a></li>
+  <li class="language-menu">
+    <a href="#" title="EN">
+      <img src="images/EN.jpg.avif" alt="English Flag" class="flag-icon" />
+      EN <span class="down-arrow">&#9662;</span>
+    </a>
+  </li>
+</ul>
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById('dropdownMenu');
+    if (menu.style.display === 'flex') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'flex';
+    }
+  }
+</script>
+</nav>
+<section class="registration-section">
+  <h1 class="registration-title">SCHOOL REGISTRATION</h1>
+  <div class="registration-form-box">
+    <p>
+      Please show this registration form and the following documents to the school office.<br>
+      • Original Certified Birth Certificate<br>
+      • Original Social Security Card<br>
+      • Current Immunization Form
+    </p>
+<h3 class="section-title">Student Information</h3>
+<hr>
+<form class="registration-form">
+  <div class="registration-name-section">
+    <label class="registration-name-label">Name</label>
+    <div class="registration-name-input-group">
+      <div class="registration-input-wrapper2">
+        <input type="text" id="firstName">
+        <span class="registration-sub-label-name">First Name</span>
+      </div>
+      <div class="registration-input-wrapper2">
+        <input type="text" id="lastName">
+        <span class="registration-sub-label-name">Last Name</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="registration-form-group registration-birthdate-group">
+    <label for="birthMonth">Birth Date</label>
+    <div class="registration-birthdate-fields">
+      <div class="registration-birth-field">
+        <input type="text" id="birthMonth" maxlength="2">
+        <span class="registration-birth-placeholder">Month</span>
+      </div>
+      <div class="registration-birth-field">
+        <input type="text" id="birthDay" maxlength="2">
+        <span class="registration-birth-placeholder">Day</span>
+      </div>
+      <div class="registration-birth-field">
+        <input type="text" id="birthYear" maxlength="4">
+        <span class="registration-birth-placeholder">Year</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="registration-form-group">
+    <label for="gender">Gender</label>
+    <select id="gender">
+      <option value="">Select Gender</option>
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+
+  <div class="registration-form-row">
+    <div class="registration-form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" required>
+    </div>
+
+    <div class="registration-phone-group">
+      <label for="phone">Phone Number</label>
+      <div class="registration-phone-input-wrapper">
+        <input type="text" id="phone">
+        <span class="registration-helper-text">Please enter a valid phone number.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="registration-form-row">
+    <div class="registration-form-group">
+      <label for="grade">Grade</label>
+      <input type="text" id="grade">
+    </div>
+    <div class="registration-form-group">
+      <label for="semester">Semester</label>
+      <input type="text" id="semester">
+    </div>
+  </div>
+
+  <div class="registration-radio-group">
+    <label class="registration-radio-question">Have you previously applied to or attended this school?</label>
+    <div class="registration-radio-options">
+      <label><input type="radio" name="attendedBefore" value="yes"> Yes</label>
+      <label><input type="radio" name="attendedBefore" value="no"> No</label>
+    </div>
+  </div>
+
+  <h3 class="registration-section-title">Student Information</h3>
+  <hr>
+
+  <div class="registration-form-group-address">
+    <label class="registration-form-label">Address</label>
+    <div class="registration-input-column">
+      <div class="registration-input-wrapper3">
+        <input type="text">
+        <span class="registration-sub-label">Street Address</span>
+      </div>
+      <div class="registration-input-wrapper3">
+        <input type="text">
+        <span class="registration-sub-label">Street Address Line 2</span>
+      </div>
+      <div class="registration-inline-fields">
+        <div class="registration-input-wrapper3">
+          <input type="text">
+          <span class="registration-sub-label">City</span>
+        </div>
+        <div class="registration-input-wrapper3">
+          <input type="text">
+          <span class="registration-sub-label">State / Province</span>
+        </div>
+      </div>
+      <div class="registration-input-wrapper3">
+        <input type="text">
+        <span class="registration-sub-label">Postal / Zip Code</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="registration-homephone-group">
+    <label class="registration-homephone-label" for="home-area">Home Phone Number</label>
+    <div class="registration-homephone-column">
+      <div class="registration-homephone-inline-fields">
+        <div class="registration-homephone-input-wrapper">
+          <input type="text" id="home-area">
+          <span class="registration-sub-label1">Area Code</span>
+        </div>
+        <div class="registration-homephone-input-wrapper">
+          <input type="text" id="home-phone">
+          <span class="registration-sub-label1">Phone Number</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" class="registration-submit">Submit</button>
+</form>
+
+  </div>
+</section>
+
+<section class="enroll-banner">
+  <div class="enroll-text">Ready to take the next step in your education?</div>
+  <a href="registration.html" class="enroll-btn">ENROLL NOW</a>
+</section>
+<section class="footer-section-wrapper">
+  <footer class="school-footer">
+    <div class="footer-top">
+      <div class="footer-info">
+        <!-- Address -->
+        <div class="footer-section">
+          <img src="images/location.svg" alt="Address Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">ADDRESS</h3>
+            <p class="footer-text">
+              Jl. Bambu Kuning Selatan RT 004 / RW 003<br>
+              Kelurahan Sepanjang Jaya, Kecamatan<br>
+              Rawalumbu, Bekasi
+            </p>
+          </div>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-section">
+          <img src="images/clock.svg" alt="Clock Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">OPENING HOURS</h3>
+            <p class="footer-text">Monday - Friday: 07:00 - 15:00 WIB</p>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="footer-section">
+          <img src="images/contact.svg" alt="Contact Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">CONTACT DETAILS</h3>
+            <p class="footer-text">
+              officialmahanaim.school@gmail.com<br>
+              +62 8243 3111
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="School Logo">
+      </div>
+    </div>
+  </footer>
+</section>
+
+<!-- Footer Wrapper -->
+<div class="footer-bg">
+  <div class="footer-bottom">
+    <p>© 2025 Mahanaim School. All Rights Reserved.</p>
+    <div class="social-icons">
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
+ 
+</body>
+</html>

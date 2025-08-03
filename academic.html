@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mahanaim School</title>
+  <link rel="icon" href="images/logo.jpg" type="image/png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Load Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Birthstone&family=Great+Vibes&family=Instrument+Serif:ital@0;1&family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Load Bootstrap first -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <!-- Your custom CSS (always after Bootstrap) -->
+  <link href="style_mahanaimschool.css" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- HEADER SECTION -->
+ <header>
+  <!-- Logo Sekolah -->
+  <img src="images/logo.png" alt="School Logo" class="logo">
+  
+  <!-- Header Biru dengan Judul dan Motto -->
+  <div class="top-header">
+    <h1>MAHANAIM SCHOOL</h1>
+    <p>
+      "Everyone is precious" is our school's motto, we believe that every child is both precious and unique in their own way.
+    </p>
+  </div>
+</header>
+
+<!-- Navigasi Utama -->
+<nav>
+  <ul class="navi">
+    <li><a href="index.html" title="Home">Home</a></li>
+    <li><a href="academic.html" title="Academic" class="active-bg">Academic</a></li>
+    <li><a href="news.html" title="News">News</a></li>
+    <li><a href="contact.html" title="Contact">Contact</a></li>
+    <li><a href="registration.html" title="Registration" class="registration-btn">Registration</a></li>
+    
+    <!-- Menu Bahasa -->
+    <li class="language-menu">
+      <a href="#" title="EN">
+        <img src="images/EN.jpg.avif" alt="English Flag" class="flag-icon">
+        EN <span class="down-arrow">&#9662;</span>
+      </a>
+    </li>
+  </ul>
+    <!-- Burger Icon -->
+<div class="burger" onclick="toggleMenu()">
+  <img src="images/menu.png" alt="Menu" />
+</div>
+
+<!-- Dropdown Menu -->
+<ul class="dropdown-menu" id="dropdownMenu">
+  <li><a href="index.html" title="Home">Home</a></li>
+  <li><a href="academic.html" title="Academic">Academic</a></li>
+  <li><a href="news.html" title="News">News</a></li>
+  <li><a href="contact.html" title="Contact">Contact</a></li>
+  <li><a href="registration.html" title="Registration" class="registration-btn">Registration</a></li>
+  <li class="language-menu">
+    <a href="#" title="EN">
+      <img src="images/EN.jpg.avif" alt="English Flag" class="flag-icon" />
+      EN <span class="down-arrow">&#9662;</span>
+    </a>
+  </li>
+</ul>
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById('dropdownMenu');
+    if (menu.style.display === 'flex') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'flex';
+    }
+  }
+</script>
+</nav>
+	
+<!-- PRESCHOOL & KINDERGARTEN  -->
+<section class="main-split-section-blue">
+  <div class="overlay-blue"></div>
+  <div class="left-box-blue">
+    <img src="images/mission.jpg" alt="Small Left Image" class="small-image-blue">
+    <div class="rotated-text-blue">READY FOR THE WORLD AHEAD</div>
+  </div>
+
+  <div class="right-box-blue">
+    <img src="images/preschool.jpg" alt="Right Side Image" class="right-image-blue">
+  </div>
+
+  <!-- Titles on top of everything -->
+  <div class="title-blue">
+    <h2 class="title-academic">ACADEMIC</h2>
+    <h3 class="title-text-blue">Preschool<br>&amp; Kindergarten</h3>
+  </div>
+</section>
+
+<div class="academic-description">
+  <p class="description-text">
+    Prioritizing Character-based and Entrepreneurship Education. Learning is conducted through a scientific approach, following the K-13 curriculum, and promoting spiritual growth.
+    <span id="dots-jhs">...</span> <!-- Tanda lebih lanjut sebelum teks panjang -->
+    <span id="more-text-jhs" style="display:none;">
+    To enhance learning for preschool and kindergarten students, we also organize social activities and partnerships with other schools, visits to markets, as well as one-day character and leadership development programs.
+    </span>
+  </p>
+  <div class="read-more-wrapper">
+    <button class="read-more-btn" id="read-more-btn-jhs" onclick="toggleMoreJHS()">MORE</button>
+  </div>
+</div>
+<!-- ELEMENTARY SCHOOL -->
+<section class="main-split-section-yellow">
+  <!-- Black transparent overlay -->
+  <div class="overlay-yellow"></div>
+
+  <!-- Titles on top -->
+  <div class="title-yellow">
+    <h3 class="title-text-yellow">Elementary<br>School</h3>
+  </div>
+
+  <div class="left-box-yellow">
+    <img src="images/sd1.jpg" alt="Left Side Image" class="left-image-yellow">
+  </div>
+
+  <div class="right-box-yellow">
+    <img src="images/sd2.jpg" alt="Small Icon" class="small-image-yellow">
+    <div class="rotated-flipped-text-yellow">READY FOR THE WORLD AHEAD</div>
+  </div>
+</section>
+
+<div class="academic-description">
+  <p class="description-text">
+    Mahanaim Elementary School places a strong emphasis on character development, as well as the exploration and cultivation of talents in areas such as sports, English, and Mandarin. The school also focuses on an Entrepreneurship Program that helps shape children’s personalities to think innovatively.
+    <span id="dots-elem">...</span>
+    <span id="more-text-elem" style="display:none;">
+      According to feedback from several parents, our Elementary graduates excel both academically and in character when they transition to higher levels of education at other schools.
+    </span>
+  </p>
+  <div class="read-more-wrapper">
+<button class="read-more-btn" id="read-more-btn-elem" onclick="toggleMoreElem()">MORE</button>
+  </div>
+</div>
+
+<!-- JUNIOR HIGH SCHOOL -->
+<section class="main-split-section-blue">
+  <div class="overlay-blue"></div>
+
+  <div class="left-box-blue">
+    <img src="images/smp1.jpg" alt="Small Left Image" class="small-image-blue">
+
+    <!-- Rotated text -->
+    <div class="rotated-text-blue">READY FOR THE WORLD AHEAD</div>
+  </div>
+
+  <!-- Right side -->
+  <div class="right-box-blue">
+    <img src="images/705315553-smp.jpg" alt="Right Side Image" class="right-image-blue">
+  </div>
+
+  <!-- Titles on top of everything -->
+  <div class="title-blue">
+    <h3 class="title-text-blue" id="junior-high-school">Junior<br>High School</h3>
+  </div>
+</section>
+
+<div class="academic-description">
+  <p class="description-text">
+    The program emphasizes entrepreneurship education as a key component in shaping students into independent, high-quality individuals. By fostering innovative and critical thinking, it encourages students to become proactive problem-solvers and creative thinkers who are ready to face real-world challenges. 
+    <span id="dots-jhs">...</span>  <!-- Tanda "..." yang akan terlihat pertama kali -->
+    <span id="more-text-jhs" style="display:none;">
+      This entrepreneurial mindset is integrated with the Kurikulum 2013 (K-13), which already promotes student-centered learning, character development, and competence-based education. The combination of entrepreneurship education and the K-13 curriculum aims to produce learners who are not only academically competent but also equipped with the practical skills and mindset needed to thrive in the modern, dynamic economy.
+    </span>
+  </p>
+  <div class="read-more-wrapper">
+    <button class="read-more-btn" id="read-more-btn-jhs" onclick="toggleMoreJHS()">MORE</button>
+  </div>
+</div>
+
+<!-- SENIOR HIGH SCHOOL -->
+	
+<section class="main-split-section-yellow">
+  <div class="overlay-yellow"></div>
+
+  <!-- Titles on top -->
+  <div class="title-yellow">
+    <h3 class="title-text-yellow">Senior<br>High School</h3>
+  </div>
+
+  <div class="left-box-yellow">
+    <img src="images/sma1.jpg" alt="Left Side Image" class="left-image-yellow">
+  </div>
+
+  <div class="right-box-yellow">
+    <img src="images/sma2.jpg" alt="Small Icon" class="small-image-yellow">
+    <div class="rotated-flipped-text-yellow">READY FOR THE WORLD AHEAD</div>
+  </div>
+</section>
+
+<div class="academic-description">
+  <p class="description-text">
+    The program balances academic development, character building, and community service as an application of spiritual activities. Promoting scientific research as a platform for students to explore and develop their potential, it encourages curiosity and critical thinking that extend beyond the classroom.
+    
+    <span id="dots-senior">...</span>
+    <span id="more-text-senior" style="display:none;">
+      By integrating these elements, students are empowered to grow holistically—academically, morally, and socially—preparing them to become responsible and innovative members of society.
+    </span>
+  </p>
+  <div class="read-more-wrapper">
+    <button class="read-more-btn" id="read-more-btn-senior" onclick="toggleMoreSenior()">MORE</button>
+  </div>
+</div>
+
+<!-- VOCATIONAL HIGH SCHOOL -->
+<section class="main-split-section-blue">
+  <div class="overlay-blue"></div>
+
+  <div class="left-box-blue">
+    <img src="images/smp1.jpg" alt="Small Left Image" class="small-image-blue">
+
+    <div class="rotated-text-blue">READY FOR THE WORLD AHEAD</div>
+  </div>
+
+  <div class="right-box-blue">
+    <img src="images/705315553-smp.jpg" alt="Right Side Image" class="right-image-blue">
+  </div>
+
+  <!-- Titles on top of everything -->
+  <div class="title-blue">
+    <h3 class="title-text-blue" id="vocational-high-school">Vocational<br>High School</h3>
+  </div>
+</section>
+
+	<div class="academic-description">
+  <p class="description-text">
+    This level’s motto is SMART, which stands for Spiritual, Manner, Attitude, Responsibility, and Talent. It emphasizes the importance of developing a God-fearing character alongside skills.     
+    <span id="dots-vocational">...</span>
+    <span id="more-text-vocational" style="display:none;">
+      Each aspect of SMART plays a vital role in shaping a person’s overall character and success. Focusing on these values helps build a strong foundation for both personal and professional growth.
+    </span>
+  </p>
+
+  <div class="read-more-wrapper">
+    <button class="read-more-btn" id="read-more-btn-vocational" onclick="toggleMoreVocational()">MORE</button>
+  </div>
+</div>
+
+<section class="enroll-banner">
+  <div class="enroll-text">Ready to take the next step in your education?</div>
+  <a href="registration.html" class="enroll-btn">ENROLL NOW</a>
+</section>
+
+	<!-- Footer Start -->
+<section class="footer-section-wrapper">
+  <footer class="school-footer">
+    <div class="footer-top">
+      <div class="footer-info">
+        <!-- Address -->
+        <div class="footer-section">
+          <img src="images/location.svg" alt="Address Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">ADDRESS</h3>
+            <p class="footer-text">
+              Jl. Bambu Kuning Selatan RT 004 / RW 003<br>
+              Kelurahan Sepanjang Jaya, Kecamatan<br>
+              Rawalumbu, Bekasi
+            </p>
+          </div>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-section">
+          <img src="images/clock.svg" alt="Clock Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">OPENING HOURS</h3>
+            <p class="footer-text">Monday - Friday: 07:00 - 15:00 WIB</p>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="footer-section">
+          <img src="images/contact.svg" alt="Contact Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">CONTACT DETAILS</h3>
+            <p class="footer-text">
+              officialmahanaim.school@gmail.com<br>
+              +62 8243 3111
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="School Logo">
+      </div>
+    </div>
+  </footer>
+</section>
+
+<!-- Footer Wrapper -->
+<div class="footer-bg">
+  <div class="footer-bottom">
+    <p>© 2025 Mahanaim School. All Rights Reserved.</p>
+    <div class="social-icons">
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
+<script>
+  function toggleMoreJHS() {
+  // Ambil elemen-elemen yang terkait
+  var dots = document.getElementById("dots-jhs");
+  var moreText = document.getElementById("more-text-jhs");
+  var btnText = document.getElementById("read-more-btn-jhs");
+
+  // Jika teks tersembunyi, tampilkan dan ubah tombol menjadi "LESS"
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";  // Menampilkan "..."
+    btnText.innerHTML = "MORE";     // Ubah tombol kembali ke "MORE"
+    moreText.style.display = "none"; // Sembunyikan teks lebih banyak
+  } else {
+    dots.style.display = "none";    // Sembunyikan "..."
+    btnText.innerHTML = "LESS";     // Ubah tombol menjadi "LESS"
+    moreText.style.display = "inline"; // Tampilkan teks lebih banyak
+  }
+}
+
+function toggleMoreElem() {
+  var dots = document.getElementById("dots-elem");
+  var moreText = document.getElementById("more-text-elem");
+  var btnText = document.getElementById("read-more-btn-elem");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "MORE";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "LESS";
+    moreText.style.display = "inline";
+  }
+}
+
+function toggleMoreJHS() {
+  var dots = document.getElementById("dots-jhs");
+  var moreText = document.getElementById("more-text-jhs");
+  var btnText = document.getElementById("read-more-btn-jhs");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "MORE";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "LESS";
+    moreText.style.display = "inline";
+  }
+}
+
+function toggleMoreSenior() {
+  var dots = document.getElementById("dots-senior");
+  var moreText = document.getElementById("more-text-senior");
+  var btnText = document.getElementById("read-more-btn-senior");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "MORE";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "LESS";
+    moreText.style.display = "inline";
+  }
+}
+
+function toggleMoreVocational() {
+  var dots = document.getElementById("dots-vocational");
+  var moreText = document.getElementById("more-text-vocational");
+  var btnText = document.getElementById("read-more-btn-vocational");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "MORE";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "LESS";
+    moreText.style.display = "inline";
+  }
+}
+
+
+</script>
+</body>
+</html>

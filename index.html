@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mahanaim School</title>
+  <link rel="icon" href="images/logo.jpg" type="image/png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Load Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Birthstone&family=Great+Vibes&family=Instrument+Serif:ital@0;1&family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Load Bootstrap first -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <!-- Your custom CSS (always after Bootstrap) -->
+  <link href="style_mahanaimschool.css" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- HEADER SECTION -->
+ <header>
+  <!-- Logo Sekolah -->
+  <img src="images/logo.png" alt="School Logo" class="logo">
+  
+  <!-- Header Biru dengan Judul dan Motto -->
+  <div class="top-header">
+    <h1>MAHANAIM SCHOOL</h1>
+    <p>
+      "Everyone is precious" is our school's motto, we believe that every child is both precious and unique in their own way.
+    </p>
+  </div>
+</header>
+
+<!-- Navigasi Utama -->
+<nav>
+  <ul class="navi">
+    <li><a href="index.html" title="Home" class="active-bg">Home</a></li>
+    <li><a href="academic.html" title="Academic">Academic</a></li>
+    <li><a href="news.html" title="News">News</a></li>
+    <li><a href="contact.html" title="Contact">Contact</a></li>
+    <li><a href="registration.html" title="Registration" class="registration-btn">Registration</a></li>
+    
+    <!-- Menu Bahasa -->
+    <li class="language-menu">
+      <a href="#" title="EN">
+        <img src="images/EN.jpg.avif" alt="English Flag" class="flag-icon">
+        EN <span class="down-arrow">&#9662;</span>
+      </a>
+    </li>
+  </ul>
+    <!-- Burger Icon -->
+<div class="burger" onclick="toggleMenu()">
+  <img src="images/menu.png" alt="Menu" />
+</div>
+
+<!-- Dropdown Menu -->
+<ul class="dropdown-menu" id="dropdownMenu">
+  <li><a href="index.html" title="Home" >Home</a></li>
+  <li><a href="academic.html" title="Academic">Academic</a></li>
+  <li><a href="news.html" title="News">News</a></li>
+  <li><a href="contact.html" title="Contact">Contact</a></li>
+  <li><a href="registration.html" title="Registration" class="registration-btn">Registration</a></li>
+  <li class="language-menu">
+    <a href="#" title="EN">
+      <img src="images/EN.jpg.avif" alt="English Flag" class="flag-icon" />
+      EN <span class="down-arrow">&#9662;</span>
+    </a>
+  </li>
+</ul>
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById('dropdownMenu');
+    if (menu.style.display === 'flex') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'flex';
+    }
+  }
+</script>
+</nav>
+
+	
+<!-- HERO IMAGE -->
+<div class="home-image">
+  <img src="images/hero-image.jpg" alt="Hero Image" title="Hero">
+</div>
+
+<!-- HERO TEXT -->
+<div class="main">
+  <div class="home-text">
+    <h1 class="main-head">COME &amp; JOIN US</h1>
+    <h2 class="sub-head">
+      Mahanaim School believes that every child is valuable, as reflected in our motto, "Everyone Is Precious." 
+      Therefore, we do not treat every child or student the same, because they each have their own uniqueness.
+      They have their own strengths and weaknesses. We help them overcome their weaknesses and sharpen their strengths, 
+      so they can excel in their respective areas.
+    </h2>
+    <form>
+      <button type="submit" formaction="registration.html" class="button1">REGISTER NOW</button>
+    </form>
+  </div>
+</div>
+
+<!-- VISION & MISSION SECTION -->
+<div class="vision-container">
+  <!-- VISION IMAGE -->
+  <div class="image-overlay-container">
+    <img src="images/vision.jpg" alt="Vision Image">
+    <div class="overlay">
+      <div class="visionmission-text">
+        <h1 class="visionmission-title">VISION</h1>
+        <p class="vision-body">
+          Preparing a generation of leaders who fear God, possess knowledge, understanding, and wisdom,
+          excel in their fields, and demonstrate a character that is pleasing to God.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION IMAGE -->
+  <div class="image-overlay-container">
+    <img src="images/mission.jpg" alt="Mission Image">
+    <div class="overlay">
+      <div class="visionmission-text">
+        <h1 class="visionmission-title">MISSION</h1>
+        <ol class="mission-body">
+          <li>Providing each student with a high-quality, holistic education, enriched by character development.</li>
+          <li>Exploring and developing the talents and potential that God has entrusted to each student.</li>
+          <li>Nurturing and fostering students' creativity, accompanied by analytical thinking skills.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ACADEMIC CAROUSEL SECTION -->
+<!-- UPCOMING EVENT CAROUSEL SECTION -->
+<div class="event-container">
+  <p id="event-title">UPCOMING EVENT</p>
+  <p id="event-subtitle">Get Involved With Our Community</p>
+</div>
+
+<div class="scrollmenu">
+	<img src="images/23 maret 2024.jpg" alt="Upcoming Event">
+	<img src="images/28 april 2024.jpg" alt="Upcoming Event">
+	<img src="images/20 dec 2024.jpg" alt="Upcoming Event">
+	<img src="images/31 dec 2024.jpg" alt="Upcoming Event">
+	<img src="images/15 maret 2025.jpg" alt="Upcoming Event">
+</div>
+<script>
+  const scrollContainer = document.querySelector('.scrollmenu');
+
+  function autoScroll() {
+    if (!scrollContainer) return;
+
+    scrollContainer.scrollLeft += 1;
+
+    // Reset to beginning when scroll reaches the end
+    if (scrollContainer.scrollLeft + scrollContainer.offsetWidth >= scrollContainer.scrollWidth) {
+      scrollContainer.scrollLeft = 0;
+    }
+  }
+
+  setInterval(autoScroll, 30); // Kecepatan scroll (lebih kecil = lebih cepat)
+</script>
+
+ <!-- ALUMNI CAROUSEL SECTION -->
+		<p id="alumni-maintitle">HOW OUR ALUMNI MAKE<br>THEIR MARK ON THE WORLD</p>
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <p class=alumni-title1>Elaine Derorice, Class of 2018</p>
+		   <p class=alumni-bodytext1>“I graduated from Mahanaim School in 2018. Mahanaim provided me with a strong foundation in faith within a warm and supportive community. The school's commitment to academic excellence truly prepares its students for success. It’s a remarkable and inspiring place! I recently had the pleasure of touring the school again, and I was amazed by how beautiful it looks. The advancements in technology and innovation were truly impressive. I'm incredibly proud to be an alumnus of Mahanaim School."</p>
+     <br>
+      </div>
+
+		
+      <div class="item">
+		<p class=alumni-title1>Gabriel Timothy, Class of 2020</p>
+		   <p class=alumni-bodytext2>Mahanaim School builds a strong foundation in core academic skills while focusing on instilling and nurturing Christian values in its students. I was immersed in a faith-based, well-connected, and loving community. I was gifted an opportunity for high academic achievement.”</p>      
+		<br>
+      </div>
+    
+      <div class="item">
+		<p class=alumni-title1>Clarice Parham, Class of 2020</p>
+		   <p class=alumni-bodytext3>“I owe a lot to Mahanaim School. It has made me who I am. The love and generosity were immeasurable and Mahanaim School will always have a special place in my heart! It was more than just a school, it was a family that nurtured my growth academically, spiritually, and personally. Mahanaim School will forever hold a special place in my heart, and I will always be grateful for the foundation it gave me."”</p>         
+		<br>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<section class="enroll-banner">
+  <div class="enroll-text">Ready to take the next step in your education?</div>
+  <a href="registration.html" class="enroll-btn">ENROLL NOW</a>
+</section>
+	
+<!-- Footer Start -->
+<section class="footer-section-wrapper">
+  <footer class="school-footer">
+    <div class="footer-top">
+      <div class="footer-info">
+        <!-- Address -->
+        <div class="footer-section">
+          <img src="images/location.svg" alt="Address Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">ADDRESS</h3>
+            <p class="footer-text">
+              Jl. Bambu Kuning Selatan RT 004 / RW 003<br>
+              Kelurahan Sepanjang Jaya, Kecamatan<br>
+              Rawalumbu, Bekasi
+            </p>
+          </div>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-section">
+          <img src="images/clock.svg" alt="Clock Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">OPENING HOURS</h3>
+            <p class="footer-text">Monday - Friday: 07:00 - 15:00 WIB</p>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="footer-section">
+          <img src="images/contact.svg" alt="Contact Icon" class="footer-icon">
+          <div>
+            <h3 class="footer-heading">CONTACT DETAILS</h3>
+            <p class="footer-text">
+              officialmahanaim.school@gmail.com<br>
+              +62 8243 3111
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="School Logo">
+      </div>
+    </div>
+  </footer>
+</section>
+
+<!-- Footer Wrapper -->
+<div class="footer-bg">
+  <div class="footer-bottom">
+    <p>© 2025 Mahanaim School. All Rights Reserved.</p>
+    <div class="social-icons">
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
+
+</body>
+</html>
